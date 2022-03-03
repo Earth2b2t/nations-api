@@ -44,18 +44,6 @@ public interface Nation {
 
     void setMemberRole(Member member, MemberRole role);
 
-    LocalDateTime getRewardedAt(Member member);
-
-    void setRewardedAt(Member member, LocalDateTime time);
-
-    LocalDateTime getRewardCalculatedAt();
-
-    void setRewardCalculatedAt(LocalDateTime time);
-
-    int getReward();
-
-    void setReward(int reward);
-
     LocalDateTime getDropletCollectedAt();
 
     void setDropletCollectedAt(LocalDateTime time);
