@@ -20,9 +20,9 @@ public interface Nation {
 
     Wallet getWallet();
 
-    int getRetentionCost();
+    int getRetentionPoint();
 
-    void setRetentionCost(int rp);
+    void setRetentionPoint(int rp);
 
     Vec3i getNexus();
 
@@ -32,21 +32,21 @@ public interface Nation {
 
     void setRegions(Collection<Vec2i> regions);
 
-    Collection<earth2b2t.nations.api.model.Member> getMembers();
+    Collection<Member> getMembers();
 
-    void setMembers(Collection<earth2b2t.nations.api.model.Member> members);
+    void setMembers(Collection<Member> members);
 
     Collection<Invitation> getInvitations();
 
     void setInvitations(Collection<Invitation> invitations);
 
-    MemberRole getMemberRole(earth2b2t.nations.api.model.Member member);
+    MemberRole getMemberRole(Member member);
 
-    void setMemberRole(earth2b2t.nations.api.model.Member member, MemberRole role);
+    void setMemberRole(Member member, MemberRole role);
 
-    LocalDateTime getDropletCollectedAt();
+    LocalDateTime getRetentionCostCollectedAt();
 
-    void setDropletCollectedAt(LocalDateTime time);
+    void setRetentionCostCollectedAt(LocalDateTime time);
 
     int getRegionCharge();
 
