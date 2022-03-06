@@ -20,29 +20,29 @@ public interface Nation {
 
     Wallet getWallet();
 
-    int getDroplet();
+    int getRetentionCost();
 
-    void setDroplet(int drop);
+    void setRetentionCost(int rp);
+
+    Vec3i getNexus();
+
+    void setNexus(Vec3i vec);
 
     Collection<Vec2i> getRegions();
 
     void setRegions(Collection<Vec2i> regions);
 
-    Collection<Member> getMembers();
+    Collection<earth2b2t.nations.api.model.Member> getMembers();
 
-    void setMembers(Collection<Member> members);
-
-    Vec3i getSpawn();
-
-    void setSpawn(Vec3i spawn);
+    void setMembers(Collection<earth2b2t.nations.api.model.Member> members);
 
     Collection<Invitation> getInvitations();
 
     void setInvitations(Collection<Invitation> invitations);
 
-    MemberRole getMemberRole(Member member);
+    MemberRole getMemberRole(earth2b2t.nations.api.model.Member member);
 
-    void setMemberRole(Member member, MemberRole role);
+    void setMemberRole(earth2b2t.nations.api.model.Member member, MemberRole role);
 
     LocalDateTime getDropletCollectedAt();
 
