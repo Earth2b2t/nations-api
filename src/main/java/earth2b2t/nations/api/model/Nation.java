@@ -24,6 +24,10 @@ public interface Nation {
 
     void setRetentionPoint(int rp);
 
+    int getRetentionCost();
+
+    int getMaxRetentionPoint();
+
     Vec3i getNexus();
 
     void setNexus(Vec3i vec);
